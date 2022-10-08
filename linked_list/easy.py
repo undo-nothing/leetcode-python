@@ -109,7 +109,7 @@ class Solution2:
     '''
 
     def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> ListNode:
-        # 两条不同的遍历路劲，分别从a, b开始遍历
+        # 两条不同的遍历路径，分别从a, b开始遍历
         # 当a遍历完后继续遍历b， 当b遍历完后继续遍历a
         # 当值第一次相等时，就是交点
         if not (headA and headB):

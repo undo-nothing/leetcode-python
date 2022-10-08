@@ -50,6 +50,9 @@ class QuickSort:
 
     def quickSortArray(nums, left, right):
         # 递归
+        # 使用两个标记i，j将nums分成三段，直到i >= j
+        # 小于pivot |   待分类  | 大于pivot
+        #           i          j
         if left >= right:
             return
 
@@ -71,11 +74,12 @@ class QuickSort:
                 j -= 1
 
         nums[i] = pivot
+
         # quickSortArray(nums, left, i - 1)
         # quickSortArray(nums, i + 1, right)
 
     def quickSortArray1(nums, begin, end):
-        # 使用两个标记i，j将nuns分成三段
+        # 使用两个标记i，j将nums分成三段
         # 小于pivot | 大于pivot | 待分类
         #           i          j
         # 使用一次循环即可将记录分成：小于pivot | 大于pivot
